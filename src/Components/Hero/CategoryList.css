@@ -1,0 +1,168 @@
+.category-list {
+  justify-content: space-around;
+  padding: 10px;
+  padding-left: 80px;
+  padding-right: 50px;
+}
+
+.category-list h2 {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.category-items {
+  display: flex;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.icon-container {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  fill: #000;
+}
+
+.category-item span {
+  text-align: center;
+  font-size: 12px;
+}
+
+.category-item.active {
+  background-color: #004e98;
+  color: #fff;
+}
+
+.selected-category {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.selected-category button {
+  margin-right: 5px;
+  background-color: #fff;
+  border: 1px solid #004e98;
+  border-radius: 20px;
+  color: #004e98;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.selected-category span {
+  margin: 0 5px;
+}
+
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1;
+  width: 200px; 
+}
+
+.dropdown div {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dropdown div:hover {
+  background-color: #ddd;
+}
+
+.dropdown-container.active .dropdown {
+  display: block;
+}
+
+.price-dropdown {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1;
+  width: 250px; 
+}
+
+.price-dropdown input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+}
+
+.price-dropdown button {
+  background-color: #004e98;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.price-dropdown button:hover {
+  background-color: white;
+  color: #004e98;
+}
+
+.search-bar-input {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 16px;
+  margin-right: 20px;
+  width: 90%; 
+}
+
+.search-bar-input::placeholder {
+  color: #999;
+}
+
+
+.search-bar input {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-bar input::placeholder {
+  color: #999;
+}
+
+.arrow {
+  margin-left: 5px;
+}
+
+.selected-category button.active {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+}
+
+.selected-category button.active:hover {
+  background-color: #0056b3;
+}
+
