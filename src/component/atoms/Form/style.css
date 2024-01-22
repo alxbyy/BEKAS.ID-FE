@@ -1,0 +1,14 @@
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper input,
+.input-wrapper textarea {
+  @apply block py-[8px] px-[24px] min-h-[45px] w-full border border-gray-400 rounded-md;
+}
+
+.input-wrapper label {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  display: block;
+}
